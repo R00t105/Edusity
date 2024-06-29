@@ -1,0 +1,73 @@
+.AboutUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto;
+    gap: 50px;
+    font-size: 15px;
+}
+
+.AboutUs .aboutUsLeft{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.AboutUs .aboutUsRight{
+    flex-basis: 56%;
+    text-align: left;
+    font-size: 15px;
+}
+
+.AboutUs .aboutUsLeft .AboutUsImage{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.PlayIcon{
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+
+}
+
+.AboutUs h3{
+    font-weight: 600;
+    font-size: 18px;
+    color: #212EA0;
+}
+
+
+.AboutUs h2{
+    font-size: 35px;
+    color: #000F38;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.AboutUs p{
+    color: #676767;
+    margin-bottom: 15px;
+}
+
+
+
+/* ----------- media query ------------ */
+
+@media (max-width: 800px) {
+    .AboutUs{
+        flex-direction: column;
+    }
+    .aboutUsLeft{
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+    }
+    .aboutUsRight{
+        flex-basis: 100%;
+    }
+    
+}

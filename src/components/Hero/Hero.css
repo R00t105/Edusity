@@ -1,0 +1,58 @@
+.Hero {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url(../../assests/hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.HeroText {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.HeroText h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.HeroText p {
+  max-width: 700px;
+  margin: 10px auto 20px;
+  line-height: 1.4
+}
+
+.btn img{
+    width: 20px;
+    transition-duration: 0.5s;
+}
+
+
+/* ------------ Media query ------------- */
+
+@media (max-width: 850px) {
+  .HeroText h1{
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .HeroText h1{
+    font-size: 30px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .HeroText p{
+    font-size: 14px;
+    margin: 15px auto 30px;
+  }
+}

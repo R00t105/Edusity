@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Playwrite NG Modern", cursive;
+    background-color: #f5f5f5;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #212121;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition-duration: 0.5s;
+}
+
+.btn:hover{
+    border-radius: 8px;
+    /* border-bottom: solid #fff 3px; */
+    /* background-color: transparent; */
+    /* color: #fff; */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.btn.darkBtn{
+    background-color: #212EA0;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .btn{
+        padding: 14px 22px;
+    }
+}

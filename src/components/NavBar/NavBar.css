@@ -1,0 +1,85 @@
+nav{
+    /* background-color: #333; */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+nav img{
+    width: 180px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.DarkNav{
+    background: #212EA0;
+    transition-duration: 0.5s;
+}
+
+.MenuIcon{
+    display: none;
+    margin-right: 30px;
+}
+
+/* ---------- Media Query ------------- */
+
+@media (max-width: 1000px) {
+    .logo{
+        width: 140px;
+    }
+    nav ul li{
+        margin: 10px 15px;
+    }
+}
+
+
+@media (max-width: 840px) {
+    nav{
+        padding: 15px 0;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #212EA0;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition-duration: 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px 40px;
+    }
+
+    .MenuIcon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .HideMobileMenu{
+        right: -200px;
+    }
+
+    .btn{
+        font-size: 90%;
+    }
+    nav img{
+        margin-left: 15px;
+    }
+}
+
